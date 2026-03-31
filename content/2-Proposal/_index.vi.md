@@ -60,7 +60,7 @@ Hệ thống sử dụng kiến trúc Cloud-based, phân chia rõ ràng giữa f
 8. GuardDuty giám sát và phát hiện hành vi bất thường  
 
 
-![IoT Weather Station Architecture](\images\2-Proposal\proposal_final.jpg)
+![IoT Weather Station Architecture](/images/2-Proposal/proposal_final.jpg)
 
 
 ### *Dịch vụ AWS sử dụng*  
