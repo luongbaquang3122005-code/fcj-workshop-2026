@@ -145,8 +145,7 @@ Chi phí dự kiến (Free Tier + mức thấp):
 - GuardDuty: ~1–2 USD/tháng (CloudTrail:0.8$/1M event)  
 - Bedrock: ~1-3$ (0.25$/1M input tokens,1.25$/1M output tokens)
 
-
-*Tổng*: khoảng 38.8–51.8 USD/tháng 
+Tổng: khoảng 38.8–51.8 USD/tháng 
 
 ---
 
