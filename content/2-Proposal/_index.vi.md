@@ -6,14 +6,18 @@ chapter: false
 pre: " <b> 2. </b> "
 ---
 
-# E-commerce Skincare Platform  
-## Nền tảng thương mại điện tử chăm sóc da tích hợp AI & AWS Cloud  
+# E-commerce Cosmetic Platform  
+<div style="text-align: center;">
+
+## Nền tảng thương mại điện tử chăm sóc da tích hợp AI & AWS Cloud
+
+</div>  
 
 ---
 
 ## 1. Tóm tắt điều hành  
 
-E-commerce Skincare Platform là một hệ thống web thương mại điện tử được phát triển nhằm cung cấp các sản phẩm chăm sóc da và làm đẹp cho người dùng. Nền tảng không chỉ hỗ trợ mua sắm trực tuyến mà còn tích hợp tính năng gợi ý sản phẩm dựa trên phân tích da mặt, giúp cá nhân hóa trải nghiệm người dùng.
+E-commerce Cosmetic Platform là một hệ thống web thương mại điện tử được phát triển nhằm cung cấp các sản phẩm chăm sóc da và làm đẹp cho người dùng. Nền tảng không chỉ hỗ trợ mua sắm trực tuyến mà còn tích hợp tính năng gợi ý sản phẩm dựa trên phân tích da mặt, giúp cá nhân hóa trải nghiệm người dùng.
 
 Hệ thống được triển khai trên nền tảng AWS Cloud với kiến trúc hiện đại, bao gồm frontend sử dụng React, backend Node.js, cơ sở dữ liệu PostgreSQL, cùng với các dịch vụ như CloudFront, S3, RDS và ECS Fargate.
 
