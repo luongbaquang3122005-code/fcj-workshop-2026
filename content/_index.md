@@ -31,7 +31,7 @@ chapter: false
 
 &emsp; **Internship Duration:** From 12/01/2026 to 18/04/2026
 
-![Your profile picture](C:\Users\Admin\Desktop\aws.jpg)
+![Your profile picture](/images/aws.jpg)
 
 ### Report Content
 
