@@ -2,7 +2,7 @@
 
 title: "Week 5 Worklog"
 date: 2024-01-29
-weight: 1
+weight: 5
 chapter: false
 pre: " <b> 1.5. </b> "
 ----------------------
