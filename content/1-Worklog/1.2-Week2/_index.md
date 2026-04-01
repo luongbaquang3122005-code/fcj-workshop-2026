@@ -14,11 +14,11 @@ pre: " <b> 1.2. </b> "
 ### Tasks to be carried out this week:
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | ---- | ---------- | --------------- | ------------------ |
-| 2 | - Learn IAM concepts <br> - Users, Groups, Roles, Policies |  |  | https://cloudjourney.awsstudygroup.com/ |
-| 3 | - Practice creating IAM users and groups <br> - Assign permissions |  |  | https://cloudjourney.awsstudygroup.com/ |
-| 4 | - Learn about IAM Roles and use cases |  |  | https://cloudjourney.awsstudygroup.com/ |
-| 5 | - Practice attaching policies <br> - Test permission boundaries |  |  | https://cloudjourney.awsstudygroup.com/ |
-| 6 | - Secure AWS account <br> - Enable MFA |  |  | https://cloudjourney.awsstudygroup.com/ |
+| 2 | - Learn IAM concepts <br> - Users, Groups, Roles, Policies | 01/09/2026 | 01/09/2026 | https://cloudjourney.awsstudygroup.com/ |
+| 3 | - Practice creating IAM users and groups <br> - Assign permissions | 1/10/2026 | 1/10/2026 | https://cloudjourney.awsstudygroup.com/ |
+| 4 | - Learn about IAM Roles and use cases | 1/11/2026 | 1/11/2026 | https://cloudjourney.awsstudygroup.com/ |
+| 5 | - Practice attaching policies <br> - Test permission boundaries | 1/12/2026 | 1/12/2026 | https://cloudjourney.awsstudygroup.com/ |
+| 6 | - Secure AWS account <br> - Enable MFA | 1/13/2026 | 1/13/2026 | https://cloudjourney.awsstudygroup.com/ |
 
 ### Week 2 Achievements:
 

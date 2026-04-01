@@ -226,3 +226,14 @@ div.notices.info p {
   border-top: 30px solid #fd9827;
   background: #fff2db;
 }
+
+/* Fix table layout to display all columns properly */
+table {
+  table-layout: auto !important;
+  width: 100%;
+}
+
+th,
+td {
+  min-width: 120px;
+}
