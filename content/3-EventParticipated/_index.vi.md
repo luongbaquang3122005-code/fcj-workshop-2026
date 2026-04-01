@@ -1,9 +1,9 @@
 ---
 title: "Các events đã tham gia"
 date: 2024-01-01
-weight: 4
+weight: 3
 chapter: false
-pre: " <b> 4. </b> "
+pre: " <b> 3. </b> "
 ---
 
 {{% notice warning %}}
@@ -24,7 +24,7 @@ pre: " <b> 4. </b> "
 
 Trong quá trình thực tập, em đã tham gia 2 events, với mỗi event là một trải nghiệm đáng nhớ với những kiến thức mới, hay và bổ ích, cùng với đó là nhứng món quà và những khoảnh khắc rất tuyệt vời.
 
-### [Event 1](4.1-Event1/)
+### [Event 1](3.1-Event1/)
 &emsp;**Tên sự kiện:** GenAI-powered App-DB Modernization workshop
 
 &emsp;**Thời gian:** 09:00 ngày 13/08/2025
@@ -35,7 +35,7 @@ Trong quá trình thực tập, em đã tham gia 2 events, với mỗi event là
 
 
 
-### [Event 2](4.2-Event2/)
+### [Event 2](3.2-Event2/)
 &emsp;**Tên sự kiện:** GenAI-powered App-DB Modernization workshop
 
 &emsp;**Thời gian:** 09:00 ngày 13/08/2025

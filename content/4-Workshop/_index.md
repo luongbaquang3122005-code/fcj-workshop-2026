@@ -1,9 +1,9 @@
 ---
 title: "Workshop"
 date: 2024-01-01
-weight: 5
+weight: 4
 chapter: false
-pre: " <b> 5. </b> "
+pre: " <b> 4. </b> "
 ---
 {{% notice warning %}}
 ⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
@@ -23,9 +23,9 @@ You will create two types of endpoints to access Amazon S3: a Gateway VPC endpoi
 
 #### Content
 
-1. [Workshop overview](5.1-Workshop-overview)
-2. [Prerequiste](5.2-Prerequiste/)
-3. [Access S3 from VPC](5.3-S3-vpc/)
-4. [Access S3 from On-premises](5.4-S3-onprem/)
-5. [VPC Endpoint Policies (Bonus)](5.5-Policy/)
-6. [Clean up](5.6-Cleanup/)
+1. [Workshop overview](4.1-Workshop-overview)
+2. [Prerequiste](4.2-Prerequiste/)
+3. [Access S3 from VPC](4.3-S3-vpc/)
+4. [Access S3 from On-premises](4.4-S3-onprem/)
+5. [VPC Endpoint Policies (Bonus)](4.5-Policy/)
+6. [Clean up](4.6-Cleanup/)

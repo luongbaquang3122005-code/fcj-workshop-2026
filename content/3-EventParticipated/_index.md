@@ -1,9 +1,9 @@
 ---
 title: "Events Participated"
 date: 2024-01-01
-weight: 4
+weight: 3
 chapter: false
-pre: " <b> 4. </b> "
+pre: " <b> 3. </b> "
 ---
 
 {{% notice warning %}}
@@ -23,7 +23,7 @@ pre: " <b> 4. </b> "
 
 During my internship, I participated in two events. Each one was a memorable experience that provided new, interesting, and useful knowledge, along with gifts and wonderful moments.
 
-### [Event 1](4.1-Event1/)  
+### [Event 1](3.1-Event1/)  
 &emsp;**Event Name:** GenAI-powered App-DB Modernization workshop  
 
 &emsp;**Date & Time:** 09:00, August 13, 2025  
@@ -34,7 +34,7 @@ During my internship, I participated in two events. Each one was a memorable exp
 
 ---
 
-### [Event 2](4.2-Event2/)  
+### [Event 2](3.2-Event2/)  
 &emsp;**Event Name:** GenAI-powered App-DB Modernization workshop  
 
 &emsp;**Date & Time:** 09:00, August 13, 2025  
