@@ -19,16 +19,16 @@ pre: " <b> 2. </b> "
 
 E-commerce Cosmetic Platform là một hệ thống web thương mại điện tử được phát triển nhằm cung cấp các sản phẩm chăm sóc da và làm đẹp cho người dùng. Nền tảng không chỉ hỗ trợ mua sắm trực tuyến mà còn tích hợp tính năng gợi ý sản phẩm dựa trên phân tích da mặt, giúp cá nhân hóa trải nghiệm người dùng.
 
-Hệ thống được triển khai trên nền tảng AWS Cloud với kiến trúc hiện đại, bao gồm frontend sử dụng React, backend Node.js, cơ sở dữ liệu PostgreSQL, cùng với các dịch vụ như CloudFront, S3, RDS và ECS Fargate.
+Hệ thống được triển khai trên nền tảng AWS Cloud với kiến trúc hiện đại, bao gồm frontend sử dụng React, backend Node.js, cơ sở dữ liệu PostgreSQL, cùng với các dịch vụ như CloudFront,Amplify, S3, RDS và ECS Fargate.
 
-Ngoài ra, hệ thống còn tích hợp các cơ chế bảo mật như AWS WAF và AWS GuardDuty để nâng cao khả năng phát hiện và phản ứng với các mối đe dọa bảo mật.
+Ngoài ra, hệ thống còn tích hợp các cơ chế bảo mật như AWS WAF để nâng cao khả năng phát hiện và phản ứng với các mối đe dọa bảo mật.
 
 ---
 
 ## 2. Tuyên bố vấn đề  
 
 ### *Vấn đề hiện tại*  
-Các nền tảng thương mại điện tử hiện nay thường:
+Các Website bán hàng trực tuyến hiện nay thường:
 - Thiếu khả năng cá nhân hóa sản phẩm theo nhu cầu người dùng  
 - Không tích hợp phân tích da hoặc tư vấn thông minh  
 - Khó mở rộng hệ thống khi lượng người dùng tăng cao  
@@ -39,7 +39,6 @@ Hệ thống được xây dựng nhằm:
 - Cung cấp nền tảng mua sắm trực tuyến thân thiện  
 - Tích hợp tính năng quét da mặt để gợi ý sản phẩm  
 - Sử dụng AWS để đảm bảo khả năng mở rộng và hiệu suất  
-- Áp dụng WAF và GuardDuty để bảo vệ hệ thống  
 
 ### *Lợi ích*  
 - Cá nhân hóa trải nghiệm người dùng  
@@ -60,8 +59,7 @@ Hệ thống sử dụng kiến trúc Cloud-based, phân chia rõ ràng giữa f
 4. API request đi qua CloudFront → ALB → ECS Fargate  
 5. Backend xử lý logic và kết nối tới RDS (PostgreSQL)  
 6. File (image, asset) được lưu trên S3  
-7. CloudWatch dùng để logging và monitoring  
-8. GuardDuty giám sát và phát hiện hành vi bất thường  
+7. CloudWatch dùng để logging và monitoring   
 
 
 ![IoT Weather Station Architecture](/images/2-Proposal/proposal_final.jpg)
@@ -75,8 +73,7 @@ Hệ thống sử dụng kiến trúc Cloud-based, phân chia rõ ràng giữa f
 - *Amazon ECS (Fargate)*: Chạy backend container  
 - *Amazon RDS (PostgreSQL)*: Lưu trữ dữ liệu  
 - *Amazon S3*: Lưu trữ file và hình ảnh  
-- *Amazon CloudWatch*: Logging & monitoring  
-- *AWS GuardDuty (dự kiến)*: Phát hiện threat  
+- *Amazon CloudWatch*: Logging & monitoring
 
 ### *Thiết kế mạng (Networking)*  
 - VPC riêng cho hệ thống  
