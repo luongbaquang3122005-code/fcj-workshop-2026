@@ -7,22 +7,20 @@ chapter: false
 pre: " <b> 1.10. </b> "
 -----------------------
 
-### Week 10 Objectives:
-
-* Learn frontend development using React.
+* Develop and deploy full project.
 
 ### Tasks to be carried out this week:
 
-| Day | Task                      | Start Date | Completion Date | Reference Material                      |
-| --- | ------------------------- | ---------- | --------------- | --------------------------------------- |
-| 2   | - Learn React basics      | 03/09/2026 | 03/09/2026      | https://cloudjourney.awsstudygroup.com/ |
-| 3   | - Build UI components     | 03/10/2026 | 03/10/2026      | https://cloudjourney.awsstudygroup.com/ |
-| 4   | - Connect API to frontend | 03/11/2026 | 03/11/2026      | https://cloudjourney.awsstudygroup.com/ |
-| 5   | - Manage state            | 03/12/2026 | 03/12/2026      | https://cloudjourney.awsstudygroup.com/ |
-| 6   | - Test UI                 | 03/13/2026 | 03/13/2026      | https://cloudjourney.awsstudygroup.com/ |
+| Day | Task                           | Start Date | Completion Date | Reference Material                      |
+| --- | ------------------------------ | ---------- | --------------- | --------------------------------------- |
+| 2   | - Design system architecture <br> -Draw system architecture    | 03/16/2026 | 03/16/2026      | Google <br> ChatGPT <br> YouTube  |
+| 3   | - Integrate frontend & backend | 03/17/2026 | 03/17/2026      | https://cloudjourney.awsstudygroup.com/ |
+| 4   | - Deploy on AWS                | 03/18/2026 | 03/18/2026      | https://cloudjourney.awsstudygroup.com/ |
+| 5   | - Test system                  | 03/19/2026 | 03/19/2026      | https://cloudjourney.awsstudygroup.com/ |
+| 6   | - Fix bugs and optimize        | 03/20/2026 | 03/20/2026      | https://cloudjourney.awsstudygroup.com/ |
 
 ### Week 10 Achievements:
 
-* Built frontend application with React.
-* Integrated frontend with backend API.
-* Improved UI/UX design.
+* Completed fullstack application.
+* Successfully deployed system on AWS.
+* Tested and optimized performance.

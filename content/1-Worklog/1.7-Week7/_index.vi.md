@@ -5,55 +5,31 @@ weight: 7
 chapter: false
 pre: " <b> 1.7. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
+---
 
+title: "Week 7 Worklog"
+date: 2024-02-12
+weight: 7
+chapter: false
+pre: " <b> 1.7. </b> "
+----------------------
 
 ### Mục tiêu tuần 7:
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Tăng cường bảo mật hệ thống trên AWS.
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Công việc thực hiện:
 
+| Day | Task                       | Start Date | Completion Date | Reference Material                      |
+| --- | -------------------------- | ---------- | --------------- | --------------------------------------- |
+| 2   | - Tìm hiểu AWS WAF <br> -Học về 2 lỗ hỗng như SQLi,XSS         | 02/16/2026 | 02/16/2026      | https://cloudjourney.awsstudygroup.com/ <br> https://portswigger.net/web-security/all-labs  |
+| 3   | - Cấu hình rule cho WAF <br> -Tạo web ACLs <br> -Custom Rule <br> -Custom Rule nâng cao <br> -Kiểm thử Rule mới   | 02/17/2026 | 02/17/2026      | https://cloudjourney.awsstudygroup.com/ |
+| 4   | - Tìm hiểu GuardDuty       | 02/18/2026 | 02/18/2026      | https://cloudjourney.awsstudygroup.com/ |
+| 5   | - Bật phát hiện mối đe dọa <br> -Kiểm thử hệ thống với 2 trường hợp: <br> +Compromised EC2 Instance <br> +Compromised IAM credentials | 02/19/2026 | 02/19/2026      | https://cloudjourney.awsstudygroup.com/ |
+| 6   | - Phân tích log bảo mật    | 02/20/2026 | 02/20/2026      | https://cloudjourney.awsstudygroup.com/ |
 
-### Kết quả đạt được tuần 7:
+### Kết quả:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* Cấu hình WAF để bảo vệ hệ thống web.
+* Kích hoạt GuardDuty giám sát bảo mật.
+* Hiểu các mối đe dọa trên cloud.
