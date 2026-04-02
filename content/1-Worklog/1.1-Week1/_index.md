@@ -7,48 +7,23 @@ pre: " <b> 1.1. </b> "
 ---
 
 
-### Week 1 Objectives:
+### Week 1 Goals:
+* Connect and get acquainted with the project team members at First Cloud Journey (FCJ).
+* Deeply research the theory of AWS services and implementation methods through community resources (YouTube).
+* Agree on the project topic and distribute initial research tasks.
 
-* Connect and get acquainted with members of First Cloud Journey.
-* Understand basic AWS services, how to use the console & CLI.
-
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-
+### Tasks to implement this week:
+| Day | Task | Start Date | End Date | Resource |
+| :--- | :--- | :--- | :--- | :--- |
+| Monday | - Get to know team members (4 AI Specialists & 1 CyberSec). <br> - Agree on communication tools and Agile workflow. | 5/01/2025 | 5/01/2025 | Internal team |
+| Tuesday | - Learn an overview of AWS Services through tutorial videos. <br> - Watch how to deploy basic services (EC2, S3, RDS) on YouTube. | 6/01/2025 | 6/01/2026 | [[AWS Study Group Channel]](https://cloudjourney.awsstudygroup.com/)|
+| Wednesday | - Continue in-depth research on AWS Services on YouTube. <br> - Explore common architectural patterns for E-commerce applications. | 7/01/2026 | 7/01/2026 | YouTube |
+| Thursday | - Online/offline team meeting. <br> - **Task Assignment:** Assign each member to deeply research one aspect of the project (Database, Security). | 8/01/2026 | 8/01/2026 | Internal team |
+| Friday | - Continue watching AWS case studies on YouTube to learn about cost optimization. <br> - Synthesize the acquired knowledge to prepare for creating a practice account. | 9/01/2026 | 9/01/2026 | YouTube |
 
 ### Week 1 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* **Team Connection:** Established relationships and clearly understood the strengths of the 5 team members.
+* **Theoretical Mastery:** Understood the roadmap for using AWS Services by observing practical tutorials on YouTube instead of immediately jumping into hands-on practice.
+* **Topic Definition:** The team has started developing a detailed understanding of the required functionalities for the facial care E-commerce platform.
+* **Ready for Practice:** Accumulated enough foundational knowledge to confidently create an AWS account without being overwhelmed by the web interface (Console) or command line (CLI).
