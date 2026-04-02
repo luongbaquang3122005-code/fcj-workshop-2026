@@ -1,126 +1,79 @@
 ---
 title: "Event 2"
-date: 2024-01-01
+date: 2024-03-14
 weight: 1
 chapter: false
 pre: " <b> 3.2. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** into your report, including this warning.
-{{% /notice %}}
 
-# Summary Report: “GenAI-powered App-DB Modernization workshop”
+# “Cloud Mastery 2026 #1 AI from Scratch”
 
 ### Event Objectives
 
-- Share best practices in modern application design
-- Introduce Domain-Driven Design (DDD) and event-driven architecture
-- Provide guidance on selecting the right compute services
-- Present AI tools to support the development lifecycle
+- Basic introduction to Strands Agent.
+- Guide on using AI effectively and improving LLM output quality.
+- Demo of an IoT AI Project and how to use AWS services.
 
-### Speakers
+### Speaker Details & Presentation Topics
 
-- **Jignesh Shah** – Director, Open Source Databases
-- **Erica Liu** – Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** – Assc. Specialist SA, Serverless Amazon Web Services
+**1. Mr. Vinh Banh Cam - Data Engineer**
+* **Topic:** Introduction and Application of Strands Agent
+* **Main Content:** Delved into the concepts and architecture of Strands Agent. Presented how Autonomous Agents can be programmed to execute complex task sequences, automate workflows, and optimize decision-making systems in enterprise environments.
+
+**2. Mr. Thinh Nguyen Tuan - DevOps Engineer**
+* **Topic:** Prompt Engineering & LLM Output Optimization
+* **Main Content:** Shared advanced Prompt Engineering techniques to maximize the power of Large Language Models (LLMs). Guided how to design structured prompts (such as Retrieval-Augmented Generation (RAG), Role Prompting, and Chain-of-Thought) to control formatting, minimize AI hallucination, and improve the quality and accuracy of the output.
+
+**3. Mr. Dinh Le Hoang - AI Engineer**
+* **Topic:** Integrating IoT AI with Basic AWS Services
+* **Main Content:** Presented how to combine IoT devices with AI edge computing while transmitting and processing data through core AWS services (such as AWS IoT Core, API Gateway, and Lambda) efficiently and cost-effectively, while maintaining high scalability.
 
 ### Key Highlights
 
-#### Identifying the drawbacks of legacy application architecture
+#### 1. Presentation by Mr. Vinh Banh Cam: Introduction and Application of Strands Agent
+- Discussed the limitations of LLMs and how to connect LLMs with external tools.
+- Explained what an AI Agent is and why we need it.
+- Introduced Strands Agents and their workflow.
+- Provided a simple demo to understand how to implement Strands Agents.
 
-- Long product release cycles → Lost revenue/missed opportunities  
-- Inefficient operations → Reduced productivity, higher costs  
-- Non-compliance with security regulations → Security breaches, loss of reputation  
+#### 2. Presentation by Mr. Thinh Nguyen Tuan: Prompt Engineering & LLM Output Optimization
+- Explained why Prompt Engineering is important.
+- Discussed what makes a good prompt.
+- Emphasized that understanding the cost of AI models is crucial.
+- Covered advanced techniques (CoT, ToT, RAG).
+- Demonstrated Proptimizer, an extension for prompt optimization.
 
-#### Transitioning to modern application architecture – Microservices
-
-Migrating to a modular system — each function is an **independent service** communicating via **events**, built on three core pillars:
-
-- **Queue Management**: Handle asynchronous tasks  
-- **Caching Strategy**: Optimize performance  
-- **Message Handling**: Flexible inter-service communication  
-
-#### Domain-Driven Design (DDD)
-
-- **Four-step method**: Identify domain events → arrange timeline → identify actors → define bounded contexts  
-- **Bookstore case study**: Demonstrates real-world DDD application  
-- **Context mapping**: 7 patterns for integrating bounded contexts  
-
-#### Event-Driven Architecture
-
-- **3 integration patterns**: Publish/Subscribe, Point-to-point, Streaming  
-- **Benefits**: Loose coupling, scalability, resilience  
-- **Sync vs async comparison**: Understanding the trade-offs  
-
-#### Compute Evolution
-
-- **Shared Responsibility Model**: EC2 → ECS → Fargate → Lambda  
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value  
-- **Functions vs Containers**: Criteria for appropriate choice  
-
-#### Amazon Q Developer
-
-- **SDLC automation**: From planning to maintenance  
-- **Code transformation**: Java upgrade, .NET modernization  
-- **AWS Transform agents**: VMware, Mainframe, .NET migration  
-
-### Key Takeaways
-
-#### Design Mindset
-
-- **Business-first approach**: Always start from the business domain, not the technology  
-- **Ubiquitous language**: Importance of a shared vocabulary between business and tech teams  
-- **Bounded contexts**: Identifying and managing complexity in large systems  
-
-#### Technical Architecture
-
-- **Event storming technique**: Practical method for modeling business processes  
-- Use **event-driven communication** instead of synchronous calls  
-- **Integration patterns**: When to use sync, async, pub/sub, streaming  
-- **Compute spectrum**: Criteria for choosing between VM, containers, and serverless  
-
-#### Modernization Strategy
-
-- **Phased approach**: No rushing — follow a clear roadmap  
-- **7Rs framework**: Multiple modernization paths depending on the application  
-- **ROI measurement**: Cost reduction + business agility  
-
-### Applying to Work
-
-- **Apply DDD** to current projects: Event storming sessions with business teams  
-- **Refactor microservices**: Use bounded contexts to define service boundaries  
-- **Implement event-driven patterns**: Replace some sync calls with async messaging  
-- **Adopt serverless**: Pilot AWS Lambda for suitable use cases  
-- **Try Amazon Q Developer**: Integrate into the dev workflow to boost productivity  
+#### 3. Presentation by Mr. Dinh Le Hoang: Integrating IoT AI with Basic AWS Services
+- Introduced the core idea and the problem: club members borrowing items from lockers.
+- Created an IoT product capable of scanning faces and logging who borrowed the items.
+- Utilized Arduino, cameras, LCD displays, and other hardware components.
+- Highlighted the critical role of IoT Core in connecting Lambda, S3, and DynamoDB, forming a highly scalable architecture.
+- Video Demo.
 
 ### Event Experience
-
-Attending the **“GenAI-powered App-DB Modernization”** workshop was extremely valuable, giving me a comprehensive view of modernizing applications and databases using advanced methods and tools. Key experiences included:
+- Attending this event helped me visually understand how to combine AI and Cloud in practice.
 
 #### Learning from highly skilled speakers
-- Experts from AWS and major tech organizations shared **best practices** in modern application design.  
-- Through real-world case studies, I gained a deeper understanding of applying **DDD** and **Event-Driven Architecture** to large projects.  
+- Grasped the standard mindset for designing prompts instead of just typing regular text queries to AI.
+- Understood how AI Agents operate to automate tasks.
 
-#### Hands-on technical exposure
-- Participating in **event storming** sessions helped me visualize how to **model business processes** into domain events.  
-- Learned how to **split microservices** and define **bounded contexts** to manage large-system complexity.  
-- Understood trade-offs between **synchronous and asynchronous communication** and integration patterns like **pub/sub, point-to-point, streaming**.  
+#### Practical technical experience
+- Directly observed the IoT system scanning faces and saving borrowing logs.
+- Clearly saw the incredibly fast data flow from the hardware (Arduino) to the Cloud (AWS IoT Core, Lambda).
 
-#### Leveraging modern tools
-- Explored **Amazon Q Developer**, an AI tool for SDLC support from planning to maintenance.  
-- Learned to **automate code transformation** and pilot serverless with **AWS Lambda** to improve productivity.  
+#### Applying modern tools
+- Discovered the Proptimizer tool to assist in writing better prompts.
+- Visualized how to use Strands Agent to connect AI with external tools.
 
-#### Networking and discussions
-- The workshop offered opportunities to exchange ideas with experts, peers, and business teams, enhancing the **ubiquitous language** between business and tech.  
-- Real-world examples reinforced the importance of the **business-first approach** rather than focusing solely on technology.  
+#### Networking and exchange
+- Had the opportunity to converse with senior peers to learn from their real-world project experiences.
+- Listened to practical questions from attendees, which helped expand my product-building mindset.
 
-#### Lessons learned
-- Applying DDD and event-driven patterns reduces **coupling** while improving **scalability** and **resilience**.  
-- Modernization requires a **phased approach** with **ROI measurement**; rushing the process can be risky.  
-- AI tools like Amazon Q Developer can significantly **boost productivity** when integrated into the current workflow.  
+#### Key takeaways
+- Need to pay close attention to costs when using AI; writing good prompts helps save a significant amount of money.
+- Cloud architecture combined with IoT is not overly difficult if using the right AWS services, and it is easily scalable when there are many users.
 
-#### Some event photos
-*Add your event photos here*  
-
-> Overall, the event not only provided technical knowledge but also helped me reshape my thinking about application design, system modernization, and cross-team collaboration.
+#### Event Photos
+* Add your images here
+> Overall, the event not only provided technical knowledge but also helped me change my mindset regarding application design, system modernization, and more effective cross-team collaboration.
