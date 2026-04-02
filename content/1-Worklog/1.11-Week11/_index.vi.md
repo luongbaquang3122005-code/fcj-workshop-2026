@@ -5,55 +5,26 @@ weight: 11
 chapter: false
 pre: " <b> 1.11. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
 
 ### Mục tiêu tuần 11:
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Tối ưu kiến trúc hệ thống và kiểm thử toàn bộ chức năng.
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Công việc thực hiện:
 
+| Day | Task                                                                                                                                            | Start Date | Completion Date | Reference Material                      |
+| --- | ----------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | --------------- | --------------------------------------- |
+| 2   | - Rà soát toàn bộ kiến trúc hệ thống (Frontend, Backend, Database, các dịch vụ AWS) <br> - Xác định các điểm nghẽn và thành phần dư thừa        | 03/16/2026 | 03/16/2026      | Google <br> ChatGPT <br> YouTube <br> https://aws.amazon.com/ |
+| 3   | - Tối ưu hiệu năng backend (thời gian phản hồi API, truy vấn database, connection pooling) <br> - Refactor các hàm chưa tối ưu                  | 03/17/2026 | 03/17/2026      | Google <br> ChatGPT <br> YouTube <br> https://aws.amazon.com/ |
+| 4   | - Tối ưu frontend (giảm số lần gọi API, lazy loading, cải thiện quản lý state) <br> - Cải thiện tốc độ phản hồi giao diện                       | 03/18/2026 | 03/18/2026      | Google <br> ChatGPT <br> YouTube <br> https://aws.amazon.com/ |
+| 5   | - Kiểm thử chức năng (functional testing) cho các tính năng chính (đăng nhập, CRUD, đặt hàng/đặt chỗ) <br> - Viết test case và ghi nhận kết quả | 03/19/2026 | 03/19/2026      | Google <br> ChatGPT <br> YouTube <br> https://aws.amazon.com/ |
+| 6   | - Kiểm thử tích hợp giữa các service (ECS, RDS, S3, CloudFront) <br> - Fix bug và xử lý các trường hợp biên (edge cases)                        | 03/20/2026 | 03/20/2026      | Google <br> ChatGPT <br> YouTube <br> https://aws.amazon.com/ |
+| 7   | - Test tải (load testing) và kiểm tra bảo mật cơ bản <br> - Tối ưu độ ổn định hệ thống và chuẩn bị bản gần hoàn thiện                           | 03/21/2026 | 03/21/2026      | Google <br> ChatGPT <br> YouTube <br> https://aws.amazon.com/ |
 
-### Kết quả đạt được tuần 11:
+### Kết quả đạt được:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* Cải thiện hiệu năng tổng thể và giảm độ trễ hệ thống.
+* Đảm bảo các chức năng chính hoạt động ổn định.
+* Phát hiện và sửa các lỗi quan trọng.
+* Hoàn thiện phiên bản gần cuối để chuẩn bị deploy và demo.

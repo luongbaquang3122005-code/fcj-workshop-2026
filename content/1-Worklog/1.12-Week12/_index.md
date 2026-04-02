@@ -15,11 +15,11 @@ pre: " <b> 1.12. </b> "
 
 | Day | Task                            | Start Date | Completion Date | Reference Material                      |
 | --- | ------------------------------- | ---------- | --------------- | --------------------------------------- |
-| 2   | - Optimize system performance   | 03/23/2026 | 03/23/2026      | https://cloudjourney.awsstudygroup.com/ |
-| 3   | - Review security configuration | 03/24/2026 | 03/24/2026      | https://cloudjourney.awsstudygroup.com/ |
-| 4   | - Prepare documentation         | 03/25/2026 | 03/25/2026      | https://cloudjourney.awsstudygroup.com/ |
-| 5   | - Practice presentation         | 03/26/2026 | 03/26/2026      | https://cloudjourney.awsstudygroup.com/ |
-| 6   | - Final submission              | 03/27/2026 | 03/27/2026      | https://cloudjourney.awsstudygroup.com/ |
+| 2   | - Review system performance   | 03/23/2026 | 03/23/2026      | https://aws.amazon.com/ |
+| 3   | - Review security configuration | 03/24/2026 | 03/24/2026      | https://aws.amazon.com/ |
+| 4   | - Prepare documentation         | 03/25/2026 | 03/25/2026      | https://aws.amazon.com/ |
+| 5   | - Practice presentation         | 03/26/2026 | 03/26/2026      | https://aws.amazon.com/ |
+| 6   | - Final submission              | 03/27/2026 | 03/27/2026      | https://aws.amazon.com/ |
 
 ### Week 12 Achievements:
 
