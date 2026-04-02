@@ -18,8 +18,8 @@ pre: " <b> 1.2. </b> "
 | --- | ------------------------------------------------ | ---------- | --------------- | --------------------------------------- |
 | 2   | - Learn IAM concepts <br> - Users, Groups, Roles | 01/12/2026 | 01/12/2026      | https://cloudjourney.awsstudygroup.com/ |
 | 3   | - Learn IAM Policies <br> - Permission structure | 01/13/2026 | 01/13/2026      | https://cloudjourney.awsstudygroup.com/ |
-| 4   | - Practice creating IAM users and groups         | 01/14/2026 | 01/14/2026      | https://cloudjourney.awsstudygroup.com/ |
-| 5   | - Assign roles and policies                      | 01/15/2026 | 01/15/2026      | https://cloudjourney.awsstudygroup.com/ |
+| 4   | - Practice creating IAM users and groups          | 01/14/2026 | 01/14/2026      | https://cloudjourney.awsstudygroup.com/ |
+| 5   | - Assign roles and policies <br> -Practice create IAM role <br> -practice switch role                       | 01/15/2026 | 01/15/2026      | https://cloudjourney.awsstudygroup.com/ |
 | 6   | - Enable MFA and secure account                  | 01/16/2026 | 01/16/2026      | https://cloudjourney.awsstudygroup.com/ |
 
 ### Week 2 Achievements:
