@@ -58,7 +58,7 @@ The system utilizes a modern cloud-based architecture, establishing a clear sepa
 7. Amazon CloudWatch is utilized for centralized logging and system monitoring.   
 
 
-![IoT Weather Station Architecture](\images\2-Proposal\architecture-diagram.jpg)
+![Architecture-Diagram](/images/2-Proposal/architecture-diagram.jpg)
 
 
 ### *AWS Services Utilized* - *AWS Amplify*: Hosts the React frontend.  
