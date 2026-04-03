@@ -62,7 +62,7 @@ Hệ thống sử dụng kiến trúc Cloud-based, phân chia rõ ràng giữa f
 7. CloudWatch dùng để logging và monitoring   
 
 
-![IoT Weather Station Architecture](/images/2-Proposal/proposal_final.jpg)
+![IoT Weather Station Architecture](\images\2-Proposal\architecture-diagram.jpg)
 
 
 ### *Dịch vụ AWS sử dụng*  
