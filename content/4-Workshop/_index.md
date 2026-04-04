@@ -1,31 +1,26 @@
 ---
-title: "Workshop"
-date: 2024-01-01
+title: "AI E-commerce Workshop"
+date: 2026-04-03
 weight: 4
-chapter: false
+chapter: true
 pre: " <b> 4. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
-{{% /notice %}}
 
-# Secure Hybrid Access to S3 using VPC Endpoints
+# Build an AI-Integrated E-commerce Website on AWS
 
 #### Overview
 
-**AWS PrivateLink** provides private connectivity to AWS services from VPCs and your on-premises networks, without exposing your traffic to the Public Internet.
+Modern e-commerce systems require a combination of a seamless user experience and complex background data processing. 
 
-In this lab, you will learn how to create, configure, and test VPC endpoints that enable your workloads to reach AWS services without traversing the Public Internet.
+In this lab, we will learn how to deploy a real-world project that completely separates the **Frontend** (React Vite) and **Backend** (Node.js & Python). Instead of using traditional servers, we will leverage AWS's serverless architecture to automatically scale the system. We will use **Amazon ECS Fargate** to process facial analysis AI models, **AWS Amplify** for high-speed static web delivery, and **Amazon Bedrock** to provide the customer consultation Chatbot feature.
 
-You will create two types of endpoints to access Amazon S3: a Gateway VPC endpoint, and an Interface VPC endpoint. These two types of VPC endpoints offer different benefits depending on if you are accessing Amazon S3 from the cloud or your on-premises location
-+ **Gateway** - Create a gateway endpoint to send traffic to Amazon S3 or DynamoDB using private IP addresses.You route traffic from your VPC to the gateway endpoint using route tables.
-+ **Interface** - Create an interface endpoint to send traffic to endpoint services that use a Network Load Balancer to distribute traffic. Traffic destined for the endpoint service is resolved using DNS.
+#### Contents
 
-#### Content
-
-1. [Workshop overview](4.1-Workshop-overview)
-2. [Prerequiste](4.2-Prerequiste/)
-3. [Access S3 from VPC](4.3-S3-vpc/)
-4. [Access S3 from On-premises](4.4-S3-onprem/)
-5. [VPC Endpoint Policies (Bonus)](4.5-Policy/)
-6. [Clean up](4.6-Cleanup/)
+1. [System Architecture Overview](4.1-Overview/)
+2. [Prerequisites](4.2-Prerequisites/)
+3. [Storage & Database Setup](4.3-Database-Storage/)
+4. [AI Backend Deployment with ECS](4.4-AI-Backend-ECS/)
+5. [Frontend Deployment with Amplify](4.5-Frontend-Amplify/)
+6. [Bedrock AI Chatbot Integration](4.6-Chatbot-Bedrock/)
+7. [WAF Security and Administration](4.7-Admin-Security/)
+8. [Clean Up Resources](4.8-Cleanup/)

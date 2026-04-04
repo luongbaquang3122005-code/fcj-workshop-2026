@@ -1,19 +1,22 @@
 ---
 title : "Giới thiệu"
-date : 2024-01-01 
+date : 2026-04-02
 weight : 1
 chapter : false
-pre : " <b> 5.1. </b> "
+pre : " <b> 4.1. </b> "
 ---
 
-#### Giới thiệu về VPC Endpoint
+#### Giới thiệu về Kiến trúc Hệ thống
 
-+ Điểm cuối VPC (endpoint) là thiết bị ảo. Chúng là các thành phần VPC có thể mở rộng theo chiều ngang, dự phòng và có tính sẵn sàng cao. Chúng cho phép giao tiếp giữa tài nguyên điện toán của bạn và dịch vụ AWS mà không gây ra rủi ro về tính sẵn sàng.
-+ Tài nguyên điện toán đang chạy trong VPC có thể truy cập Amazon S3 bằng cách sử dụng điểm cuối Gateway. Interface Endpoint  PrivateLink có thể được sử dụng bởi tài nguyên chạy trong VPC hoặc tại TTDL.
++ Các hệ thống thương mại điện tử tích hợp AI hiện đại yêu cầu sự tách biệt rõ ràng giữa giao diện tương tác và bộ phận xử lý tính toán để đảm bảo hiệu suất.
++ Trong dự án này, hệ thống sẽ phân tách hoàn toàn mã nguồn **Frontend** (giao diện React) và **Backend AI** (Pipeline Python và Controller Node.js). Mọi thành phần đều tận dụng các dịch vụ phi máy chủ (Serverless) và dịch vụ quản lý toàn phần (Managed Services) của AWS để quá trình vận hành được tự động hóa, giảm thiểu rủi ro quá tải khi phân tích AI.
 
 #### Tổng quan về workshop
-Trong workshop này, bạn sẽ sử dụng hai VPC.
-+ **"VPC Cloud"** dành cho các tài nguyên cloud như Gateway endpoint và EC2 instance để kiểm tra.
-+ **"VPC On-Prem"** mô phỏng môi trường truyền thống như nhà máy hoặc trung tâm dữ liệu của công ty. Một EC2 Instance chạy phần mềm StrongSwan VPN đã được triển khai trong "VPC On-prem" và được cấu hình tự động để thiết lập đường hầm VPN Site-to-Site với AWS Transit Gateway. VPN này mô phỏng kết nối từ một vị trí tại TTDL (on-prem) với AWS cloud. Để giảm thiểu chi phí, chỉ một phiên bản VPN được cung cấp để hỗ trợ workshop này. Khi lập kế hoạch kết nối VPN cho production workloads của bạn, AWS khuyên bạn nên sử dụng nhiều thiết bị VPN để có tính sẵn sàng cao.
 
-![overview](/images/5-Workshop/5.1-Workshop-overview/diagram1.png)
+Trong workshop này, bạn sẽ từng bước triển khai và kết nối hai phân hệ chính của dự án:
+
++ **Phân hệ Frontend (Tương tác người dùng):** Mã nguồn Reactsẽ được lưu trữ và tự động triển khai thông qua **AWS Amplify**. Các hình ảnh sản phẩm, ảnh chân dung người dùng tải lên sẽ được lưu tại **Amazon S3** và truyền tải siêu tốc qua mạng lưới **Amazon CloudFront**. Giao diện website cũng là nơi tiếp nhận câu hỏi của khách hàng dành cho Chatbot và chuyển tiếp yêu cầu về phía Backend để xử lý.
++ **Phân hệ Backend & AI (Xử lý tác vụ nặng):** Mã nguồn xử lý AI phân tích da mặt (gồm 4 models) cùng với các API nội bộ sẽ được đóng gói thành một Docker Image duy nhất. Image này sẽ được tải lên **Amazon ECR** và vận hành trên nền tảng **Amazon ECS Fargate**.Đối với tính năng Chatbot, Backend sẽ đóng vai trò trung gian: tiếp nhận yêu cầu từ người dùng, kiểm tra điều kiện truy cập hợp lệ, sau đó mới gửi dữ liệu tới **Amazon Bedrock** để sinh câu trả lời và phản hồi lại cho khách hàng. Cách tiếp cận này giúp hệ thống cấp phát tài nguyên tính toán mạnh mẽ một cách độc lập mà không cần duy trì máy chủ vật lý. Dữ liệu sản phẩm, doanh thu và kết quả phân tích AI sẽ được truy xuất và lưu trữ an toàn trong **Amazon RDS** thông qua Prisma ORM.
++ Để đảm bảo an toàn cho dự án, một lớp bảo mật **AWS WAF** sẽ được thiết lập ở ngoài cùng để chặn các lưu lượng truy cập bất thường và bảo vệ dữ liệu khách hàng.
+
+![Tổng quan kiến trúc hệ thống AI E-commerce](/images/4.1-Workshop-overview/architecture-diagram.png)
