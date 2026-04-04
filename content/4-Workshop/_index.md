@@ -16,7 +16,7 @@ In this lab, we will learn how to deploy a real-world project that completely se
 
 #### Contents
 
-1. [System Architecture Overview](4.1-Overview/)
+1. [System Architecture Overview](4.1-Workshop-overview/)
 2. [Prerequisites](4.2-Prerequisites/)
 3. [Storage & Database Setup](4.3-Database-Storage/)
 4. [AI Backend Deployment with ECS](4.4-AI-Backend-ECS/)
