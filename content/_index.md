@@ -20,7 +20,7 @@ chapter: false
 
 &emsp; **Major:** Information Technology
 
-&emsp; **Class:** AWS082025
+&emsp; **Class:** FPT-SS2
 
 &emsp; **Internship Company:** Amazon Web Services Vietnam Co., Ltd.
 

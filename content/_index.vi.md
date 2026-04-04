@@ -17,7 +17,7 @@ chapter: false
 
 &emsp; **Ngành:** Công nghệ thông tin
 
-&emsp; **Lớp:** AWS082025
+&emsp; **Lớp:** FPT-SS2
 
 &emsp; **Công ty thực tập:** Công ty TNHH Amazon Web Services Vietnam
 
