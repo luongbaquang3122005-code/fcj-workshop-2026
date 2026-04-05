@@ -143,10 +143,9 @@ Chi phí dự kiến (Free Tier + mức thấp):
 - CloudFront: ~0.5 USD/tháng(10GB traffic/tháng → ~0.5 USD)  
 - CloudWatch: ~0.2 USD/tháng(1GB data + ít request → ~0.1 USD/tháng)  
 - WAF: ~1 USD/tháng(1 Web ACL + 1 rule)  
-- GuardDuty: ~1–2 USD/tháng (CloudTrail:0.8$/1M event)  
 - Bedrock: ~1-3$ (0.25$/1M input tokens,1.25$/1M output tokens)
 
-Tổng: khoảng 38.8–51.8 USD/tháng 
+Tổng: khoảng 37.8–50.8 USD/tháng 
 
 ---
 

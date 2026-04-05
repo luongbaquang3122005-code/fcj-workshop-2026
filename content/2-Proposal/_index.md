@@ -130,10 +130,9 @@ Estimated monthly costs (Assuming Free Tier + Low Usage):
 - CloudFront: ~$0.5/month (10GB traffic/month → ~$0.5)  
 - CloudWatch: ~$0.2/month (1GB data + minimal requests → ~$0.1/month)  
 - WAF: ~$1/month (1 Web ACL + 1 rule)  
-- GuardDuty: ~$1–2/month (CloudTrail: $0.8/1M events)  
 - Bedrock: ~$1-3/month ($0.25/1M input tokens, $1.25/1M output tokens)
 
-Total Estimated Cost: Approximately $38.8–$51.8 USD/month. 
+Total Estimated Cost: Approximately $37.8–$50.8 USD/month. 
 
 ---
 

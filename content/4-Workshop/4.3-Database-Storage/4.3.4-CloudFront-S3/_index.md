@@ -1,43 +1,52 @@
 ---
-title : "Amazon S3 Setup"
+title : "Distribution via CloudFront"
 date : 2026-04-03
-weight : 3
+weight : 4
 chapter : false
-pre : " <b> 4.3.3. </b> "
+pre : " <b> 4.3.4. </b> "
 ---
 
-#### Hosting Images with Amazon S3
+#### Securing S3 with Origin Access Control (OAC)
 
-In an E-commerce system, storing product images within the RDS database is a highly suboptimal practice that increases costs and slows down query performance. Instead, we will use **Amazon Simple Storage Service (S3)** to store all static files (images, videos) independently and securely.
+Since we blocked public access to S3 in the previous step, no one can view the product images. Now, we will create a CloudFront network in front of S3 and grant a special "pass" (OAC) so that CloudFront has permission to fetch images from S3 and deliver them to users.
 
 ---
 
-#### Step 1: Initialize an S3 Bucket
+#### Step 1: Create a CloudFront Distribution
 
-1. Log in to the **AWS Management Console** and search for the **S3** service.
-2. On the main S3 screen, click the **Create bucket** button.
-3. In the **General configuration** section, enter a name for your bucket (Example: `your-ecommerce-product-images`). Note that the bucket name must be globally unique across all AWS accounts.
-4. Select the **AWS Region** that matches the region where you deployed your RDS and ECS to optimize internal connection speeds.
+1. Go to the **AWS Management Console** and search for the **CloudFront** service.
+2. Click the **Create a CloudFront distribution** button.
+3. In the **Origin domain** section, click the input box and select the S3 Bucket you created in step 4.3.3 from the dropdown list.
+4. Once you select S3, the system will display an access warning. Ignore this warning and proceed to the next step.
 
-![Initialize S3 Bucket](/images/4-Workshop/4.3-Database-Storage/4.3.3-Setup-S3/step1-create-bucket.png)
+![Select S3 as Origin for CloudFront](/images/4-Workshop/4.3-Database-Storage/4.3.4-CloudFront-S3/step1-select-origin.png)
 
-#### Step 2: Configure Public Access (Security)
+#### Step 2: Configure Origin Access Control (OAC)
 
-Following standard security principles, we will absolutely not open S3 to direct Internet access. Instead, we will completely lock down S3 and only allow CloudFront (in the next step) to read the data.
+This is the most important step to ensure strict security.
 
-1. Scroll down to the **Block Public Access settings for this bucket** section.
-2. Ensure that the **Block all public access** option is CHECKED. This prevents anyone from intentionally accessing the direct S3 image URLs.
-3. Scroll to the bottom of the page, keep the remaining default settings (such as automatic encryption), and click **Create bucket**.
+1. In the **Settings** section, select **Use recommended origin settings**.
+2. Scroll to the bottom and click **Create distribution**.
 
-![Block S3 Public Access](/images/4-Workshop/4.3-Database-Storage/4.3.3-Setup-S3/step2-block-public.png)
+![Configure Origin Access Control](/images/4-Workshop/4.3-Database-Storage/4.3.4-CloudFront-S3/step2-setup-oac.png)
 
-#### Step 3: Upload Sample Product Images
+#### Step 3: Update S3 Policy (Bucket Policy)
 
-To have test data for later Frontend setup steps, we need to upload a few sample cosmetics images.
+CloudFront has been created, but S3 still does not recognize CloudFront as an authorized entity.
 
-1. Click on the name of the Bucket you just created in the list.
-2. In the **Objects** tab, click the **Upload** button.
-3. Click the **Add files** button and upload a few product images from your computer (ensure standard formats like JPG or PNG).
-4. Click the **Upload** button at the bottom of the page and wait for the upload process to reach 100%.
+1. Right after clicking Create in the previous step, AWS will display a blue banner at the top of the screen prompting you to update the S3 policy.
+2. Click the **Copy policy** button available in that notification bar.
+3. Click the link to your S3 bucket (also shown in the notification bar) to open the S3 management page in a new tab.
+4. In the S3 page, go to the **Permissions** tab and scroll down to the **Bucket policy** section.
+5. Click **Edit**, paste the policy you just copied into the box, and click **Save changes**.
 
-![Upload sample images to S3](/images/4-Workshop/4.3-Database-Storage/4.3.3-Setup-S3/step3-upload-images.png)
+![Update S3 Bucket Policy](/images/4-Workshop/4.3-Database-Storage/4.3.4-CloudFront-S3/step3-bucket-policy.png)
+
+#### Step 4: Verify Image Delivery
+
+1. Go back to the CloudFront tab and wait about 3–5 minutes until the Distribution status changes from "Deploying" to completed.
+2. Copy the domain name provided by CloudFront under **Distribution domain name** (e.g., `d12345abcdef.cloudfront.net`).
+3. Open a new browser tab, paste the domain, and append the name of an image you previously uploaded to S3 (e.g., `d12345abcdef.cloudfront.net/son-moi.png`).
+4. If the image displays successfully, congratulations! Your storage architecture now meets enterprise standards.
+
+![Verify image via CloudFront](/images/4-Workshop/4.3-Database-Storage/4.3.4-CloudFront-S3/step4-verify-image.png)
