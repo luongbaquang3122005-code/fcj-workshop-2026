@@ -39,7 +39,4 @@ The company provides an internship allowance and offers flexible working hours w
 -> Yes, because AWS services are very convenient and the working environment is excellent.
 ---
 
-### Suggestions & Expectations
-- Do you have any suggestions to improve the internship experience?  
-- Would you like to continue this program in the future?  
-- Any other comments (free sharing):
+
