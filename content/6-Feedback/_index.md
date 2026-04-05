@@ -32,9 +32,11 @@ The company provides an internship allowance and offers flexible working hours w
 
 ### Additional Questions
 - What did you find **most satisfying** during your internship?  
+-> Access to a professional and friendly working environment.
 - What do you think the company **should improve** for future interns?  
+-> No improvements needed
 - If recommending to a friend, would you **suggest they intern here**? Why or why not?  
-
+-> Yes, because AWS services are very convenient and the working environment is excellent.
 ---
 
 ### Suggestions & Expectations

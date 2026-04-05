@@ -30,12 +30,11 @@ Công ty có hỗ trợ phụ cấp thực tập và tạo điều kiện về t
 
 
 ### Một số câu hỏi khác
-- Điều bạn **hài lòng nhất** trong thời gian thực tập?  
-- Điều bạn nghĩ công ty **cần cải thiện** cho các thực tập sinh sau?  
+- Điều bạn **hài lòng nhất** trong thời gian thực tập?
+->Được tiếp cận với môi trường làm việc chuyên nghiệp và thân thiện  
+- Điều bạn nghĩ công ty **cần cải thiện** cho các thực tập sinh sau?
+->Không có  
 - Nếu giới thiệu cho bạn bè, bạn có **khuyên họ thực tập ở đây không**? Vì sao?  
+->Có,vì dịch vụ của AWS rất tiện lợi và điệu kiện môi trường làm việc rất tốt
 
 
-### Đề xuất & mong muốn
-- Bạn có đề xuất gì để cải thiện trải nghiệm trong kỳ thực tập?  
-- Bạn có muốn tiếp tục chương trình này trong tương lai?
-- Góp ý khác (tự do chia sẻ):
